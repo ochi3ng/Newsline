@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom"
-
 type prop={
     title: string
     image: string
     section:string
 }
-export function NewsDetails ({title,image,section}: prop) {
+export function HomePage ({title,image,section}: prop) {
     const navigate=useNavigate()
     const MoreDetails=()=>{
         navigate('/more')

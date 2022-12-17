@@ -15,10 +15,9 @@ export function Body(){
         }
 
     }, [post.status])
-    console.log(post)
     return(
         <div className="newscontainer">
-            {post.data.results.map((item)=><NewsDetails title={item.title} image={item.multimedia?.[0].url}/>)}
+            {post.data.results.map((item)=><NewsDetails title={item.title} image={item.multimedia?.[1].url} section={item.section}/>)}
         </div>
     )
 }
